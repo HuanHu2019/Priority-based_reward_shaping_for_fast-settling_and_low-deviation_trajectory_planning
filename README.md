@@ -19,6 +19,7 @@
 
 * For your convenience, the above link shows all files and their right location in the root directory.
 
+
 * **Main results after running codes:**  For each case, after the eight subcase of different seeds ran, please run the file "watch_and_pick_find.py" to find out the case that gets the maximum reward. After the python file ran, there will be eight picture which are the outputs of the eight subcases after the training. The optimal trajectory is labled with "maximum.png", and the corresponding subcase can be found according to the same '.png' file.
 
 * all results are placed in the the directory "result_trajectory", and each file is named after the corresponding cases.
