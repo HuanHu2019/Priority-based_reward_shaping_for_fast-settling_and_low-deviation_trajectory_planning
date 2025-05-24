@@ -2,7 +2,7 @@
 
 
 * **Description on directories:**  Directories named with "multiobj_k_" are cases of conventional multi-objective functions, whose magnitude of weight are labeled at the end of the name. For example, 'multiobj_k_10e-3' means that the weight $k$ in the reward function is 0.001. Directories named with "proposed_base_" represent cases of the proposed objective function, whose magnitude of base is written at the end of the name. For instance, "proposed_base_3" means that the base $\lambda$ in the reward function is 3.
-* Each directory is an individual case. Each case are examined with eight different seeds, so there are eight sub-sub directories named with "s_", where main code files locate.
+* Each directory is an individual case. Each case are examined with eight different seeds, so there are eight sub directories named with "s_", where main code files locate.
 
 * **Main code file:** At the each sub-sub directory, there are six files for the training, which are as following:
 1. *Main.py*. It's main function and the training environment and reward function are defined. 
@@ -15,9 +15,16 @@
 
 5. *aeropy_fix.py*. It's functions for aerodynamics and kinectics of the wing-in-ground craft (WIG) during training.
 
-* **Prerequisites for running codes:**  Pytorch is needed to be installed in advance. In order to run the code at each sub-sub directory, the file 'datacollection.npy', 'guiyi_0.6to0.3_case1_0bu.pth', "actor_0.6to0.3_case1_0bu.pth", "critic_0.6to0.3_case1_0bu.pth" and "critic_target_0.6to0.3_case1_0bu.pth" should be downloaded and then placed in the root directory. Since the website of Github limits the size of files, the necessary file and main results are placed in the same directory and they are upload in onedrive. The link is [[[https://maildluteducn-my.sharepoint.com/:f:/g/personal/huhuan2019_mail_dlut_edu_cn/Eto68Yzc8KlKox0pZQeHn9wBiDSPEWZicshKlKtGgfqWRA?e=OUg4KN.](https://aluhiteducn-my.sharepoint.com/:f:/g/personal/huhuan2016_alu_hit_edu_cn/Em0qgCL3WpRAhRqomPTm--cBKIODyOAqEgUV-eib3FYbGQ?e=aHzlMD)](https://aluhiteducn-my.sharepoint.com/:f:/g/personal/huhuan2016_alu_hit_edu_cn/Em0qgCL3WpRAhRqomPTm--cBKIODyOAqEgUV-eib3FYbGQ?e=jRZuvQ)](https://aluhiteducn-my.sharepoint.com/:f:/g/personal/huhuan2016_alu_hit_edu_cn/Em0qgCL3WpRAhRqomPTm--cBKIODyOAqEgUV-eib3FYbGQ?e=qTvoay). The file 'datacollection.npy' is used for the calculation of aerodynamics for the WIG, and other files is needed for the code to implement deep reinforcement learning.
+* **Prerequisites for running codes:**  Pytorch is needed to be installed in advance. In order to run the code at each sub-sub directory, the file 'datacollection.npy', 'guiyi_0.3to0.6_case1_0bu.pth', "actor_0.3to0.6_case1_0bu.pth", "critic_0.3to0.6_case1_0bu.pth" and "critic_target_0.3to0.6_case1_0bu.pth" should be downloaded and then placed in the root directory. Since the website of Github limits the size of files, the necessary file and main results are placed in the same directory and they are upload in onedrive. The link is . The file 'datacollection.npy' is used for the calculation of aerodynamics for the WIG, and other files is needed for the code to implement deep reinforcement learning.
 
-* **Main results after running codes:** At the each sub directory of 'jietijihua' (in the onedrive or be downloaded), there are eight picture which are the outputs after the training, the outcome of the whole eight sub cases are labled with "maximum.png". There are also other files for your reference.
+* **Main results after running codes:**  For each case, after the eight subcase of different seeds ran, please run the file "watch_and_pick_find.py" to find out the case that gets the maximum reward. After the python file ran, there will be eight picture which are the outputs of the eight subcases after the training. The optimal trajectory is labled with "maximum.png", and the corresponding subcase can be found according to the same '.png' file.
+
+* all results are placed in the the directory "result_trajectory", and each file is named after the corresponding cases.
+*
+*
+*
+*
+* **There are also other files for your reference.
 
 1. *actor.pth*. It's neural network of the Actor in deep reinforcement learning.
 
