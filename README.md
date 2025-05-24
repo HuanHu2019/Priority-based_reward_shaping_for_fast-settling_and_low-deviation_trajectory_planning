@@ -1,7 +1,10 @@
 # Priority-based reward shaping for fast-settling and low-deviation trajectory planning of a wing-in-ground craft’s altitude change
 
 
-* **Description on directories:**  Directories named with "multiobj_k_" are cases of conventional multi-objective functions, whose magnitude of weight are labeled at the end of the name. For example, 'multiobj_k_10e-3' means that the weight of $k$ is 0.001. Directories named with "proposed_base_" represent cases of the proposed objective function, whose magnitude of coefficient is written at the end of the name. At each directory, code for each case is placed under the sub directory named 'jietijihua'. Each case are examined with eight different seeds, so there are eight sub-sub directories named with "s_", where main code files locate.
+* **Description on directories:**  Directories named with "multiobj_k_" are cases of conventional multi-objective functions, whose magnitude of weight are labeled at the end of the name. For example, 'multiobj_k_10e-3' means that the weight $k$ in the reward function is 0.001. Directories named with "proposed_base_" represent cases of the proposed objective function, whose magnitude of base is written at the end of the name. For instance, "proposed_base_3" means that the base $\lambda$ in the reward function is 3.
+*
+*
+* At each directory, code for each case is placed under the sub directory named 'jietijihua'. Each case are examined with eight different seeds, so there are eight sub-sub directories named with "s_", where main code files locate.
 
 * **Main code file:** At the each sub-sub directory, there are six files for the training, which are as following:
 1. *Main.py*. It's main function and the training environment and reward function are defined. 
