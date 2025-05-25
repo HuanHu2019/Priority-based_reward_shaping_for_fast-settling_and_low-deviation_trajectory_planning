@@ -1,4 +1,4 @@
-# Priority-based reward shaping for fast-settling and low-deviation trajectory planning of a wing-in-ground craft’s altitude change
+# Priority-based reward function for fast-settling and low-deviation trajectory planning of a wing-in-ground craft’s altitude change
 
 
 * **Description on directories:**  Directories named with "multiobj_k_" are cases of conventional multi-objective functions, whose magnitude of weight are labeled at the end of the name. For example, 'multiobj_k_10e-3' means that the weight $k$ in the reward function is 0.001. Directories named with "proposed_base_" represent cases of the proposed objective function, whose magnitude of base is written at the end of the name. For instance, "proposed_base_3" means that the base $\lambda$ in the reward function is 3.
